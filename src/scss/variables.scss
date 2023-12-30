@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Variables */
+$josefin: "Josefin Sans";
+
+$font-size:(
+    fs-100: .81rem,
+    fs-200: .93rem,
+    fs-300: 1rem,
+    fs-400: 1.125rem,
+    fs-500: 1.3rem,
+    fs-600: 1.7rem,
+    fs-700: 2rem,
+    fs-800: 3rem,
+    fs-900: 4rem,
+);
+
+$colors: (
+    bg: rgb(10, 10, 30),
+    svg-bg: rgb(240, 240, 255),
+    card-bg: rgb(30, 30, 60),
+    border: rgb(255, 255, 255),
+    font: rgb(255, 255, 255),
+);
+
+$marges : (
+    mrg-main: 3rem,
+    mrg-gap-1: 1rem,
+    mrg-gap-2: 2rem,
+    mrg-gap-3: 3rem,
+    mrg-gap-4: 4rem,
+);
+
+:root{
+    --josefin: #{$josefin};
+
+    @each $key, $value in $colors{
+        --clr-#{$key}: #{$value};
+    };
+
+    @each $key, $value in $font-size{
+        --#{$key}: #{$value};
+    };
+
+    @each $key, $value in $marges{
+        --#{$key}: #{$value};
+    };
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bonjour, je m'appelle Thomas LACROIX et je suis en BUT MMI afin de devenir développeur web">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href='https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'>
+    <title>Portfolio Accueil</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Portfolio</h1>
+        <div class="header__burger">
+            <div class="header__burger__icon">
+                <div class="header__burger__icon__bar"></div>
+                <div class="header__burger__icon__bar"></div>
+                <div class="header__burger__icon__bar"></div>
+            </div>
+        </div>
+        <nav class="header__nav" id="header__nav">
+            <a href="#presentation" class="header__nav__rubrique">Mon Profil</a>
+            <a href="#competences" class="header__nav__rubrique">Mes Compétences</a>
+            <a href="#projets" class="header__nav__rubrique">Mes Projets</a>
+            <a href="#contact" class="header__nav__rubrique">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="ancre" class="main__presentation">
+            <h2 class="main__presentation__titre">Mon profil</h2>
+            <div class="main__presentation__content">
+                <div class="main__presentation__content__image"></div>
+                <div class="main__presentation__content__texte">
+                    <h3 class="main__presentation__content__texte__titre">Thomas LACROIX</h3>
+                    <p class="main__presentation__content__texte__description">Je m'appelle Thomas Lacroix, j'ai actuellement 19 ans et je suis étudiant en deuxième année de BUT MMI (Métiers du Multimédia et de l'Internet) à Limoges. </br> J'y apprends de nombreuses compétences :
+                        le développement Web, avec des langages de programmation tels que HTML, CSS, JS, PHP et SQL ou encore
+                        le design de logos, d'interfaces avec des outils tels que la suite Adobe (Illustrator, Photoshop) et le logiciel Figma.
+                        Je souhaite par la suite me spécialiser dans le développement Web afin d'en faire mon métier ou de continuer mes études dans la programmation. </br>
+                        Je suis passionné de musique, de jeux vidéo, de lecture et d'animation notamment. Je pratique régulièrement le badminton, qui me permet de me maintenir en forme et me dépenser.</p>
+                    <a class="main__presentation__content__texte__link" href="../assets/Thomas-LACROIX.webp"><button class="main__presentation__content__texte__link__cv">Mon CV</button></a>
+            </div>
+            </div>
+        </div>
+
+        <div id="ancre" class="main__competences">
+            <h2 class="main__competences__titre">Mes compétences</h2>
+            <div class="main__competences__details">
+                <div class="main__competences__details__logos">
+                    <img data-name="html" class="main__competences__details__logos__svg" src="../assets/html_logo.svg" alt="HTML">
+                    <img data-name="css" class="main__competences__details__logos__svg" src="../assets/css.svg" alt="CSS">
+                    <img data-name="js" class="main__competences__details__logos__svg" src="../assets/js.svg" alt="JS">
+                    <img data-name="php" class="main__competences__details__logos__svg" src="../assets/php.svg" alt="PHP">
+                    <img data-name="sql" class="main__competences__details__logos__svg" src="../assets/sql.svg" alt="SQL">
+                    <img data-name="figma" class="main__competences__details__logos__svg" src="../assets/figma.svg" alt="Figma">
+                    <img data-name="adobe" class="main__competences__details__logos__svg" src="../assets/adobe.svg" alt="Adobe">
+                </div>
+                <p data-skill="" class="main__competences__details__description"></p>
+            </div>
+        </div>
+
+        <div id="ancre" class="main__projets">
+            <h2 class="main__projets__titre">Mes projets</h2>
+            <div class="main__projets__cards"></div>
+            <template class="main__projets__template">
+                <div data-page="{{page}}" class="main__projets__cards__card">
+                    <img class="main__projets__cards__card__image" src="{{src}}" alt="{{alt}}">
+                    <h3 class="main__projets__cards__card__titre">{{titre}}</h3>
+                    <p class="main__projets__cards__card__description">{{description}}</p>
+                </div>
+            </template>
+        </div>
+
+        <div id="ancre" class="main__contact">
+            <h2 class="main__contact__titre">Contact</h2>
+            <div class="main__contact__infos">
+                <p class="main__contact__infos__mail">Adresse Email : lacroix.thomas1@outlook.fr</p>
+                <p class="main__contact__infos__tel">Numéro de téléphone : 06 38 99 93 37</p>
+            </div>            
+        </div>
+    </main>
+    
+    <script src="script.js"></script> 
+</body>
+</html>

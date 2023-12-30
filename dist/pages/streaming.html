@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets : Site de Streaming</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main class="main_page">
+        <a href="../index.html"><img class="back" src="../../assets/previous.svg" alt="Previous"></a>
+        <div class="content">
+            <h1 class="content__title">Site de Streaming</h1>
+            <p class="content__texte">Dans ce projet, nous devions réaliser un site de streaming en plusieurs étapes (itérations). Ces itérations nous demandaient d'utiliser les langages de programmation HTML, CSS, JavaScript, PHP ainsi que SQL, et d'avoir une base de données.
+            </p>
+            <p class="content__texte">Pour la première itération par exemple, il nous était demandé  de pouvoir voir les films disponibles dans la base de données via un site vitrine. Pour cela, nous avions commencé par créer nos fichier HTML, CSS, JavaScript et PHP. 
+            Dans le fichier HTML, il y a notamment un template et un bouton appelé All, qui a pour fonction d'afficher tout les films de la base de données quand on clique dessus. Ce bouton All possède un attribut onclick, qui permet d'appeler une fonction JavaScript. Cette fonction JavaScript, requestMovies envoie quand à elle une requête PHP, puis renvoie ce qu'elle obtient en retour, à l'aide de la fonction JavaScript renderTemplate, pour afficher dans une balise div le contenu du template formaté avec les données reçus. De son côté, le code PHP va, suite à la requête, se connecter à la base de données et demander en SQL, la liste de tous les films.
+            Il fallait également ajouter des films dans la base de données via une interface d’administration, pour que le bouton All puisse afficher quelque chose.</p>
+            <div class="content__images">
+                <img class="content__images__image" src="../../assets/SAE_203_code_html.webp" alt="Code HTML">
+                <img class="content__images__image" src="../../assets/SAE_203_code_js.webp" alt="Code JS">
+                <img class="content__images__image" src="../../assets/SAE_203_code_php_1.webp" alt="Code PHP 1">
+                <img class="content__images__image" src="../../assets/SAE_203_code_php_2.webp" alt="Code PHP 2">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

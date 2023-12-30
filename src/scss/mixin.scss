@@ -1,0 +1,51 @@
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin titre{
+    font-size: var(--fs-800);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 100%;
+
+    @media only screen and (max-width: 850px){
+        text-align: center;
+        font-size: var(--fs-700);
+    }
+}
+
+@mixin button{
+    background-color: var(--clr-card-bg);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 3px solid transparent;
+    color: var(--clr-font);
+    font-weight: 700;
+    width: fit-content;
+    text-decoration: none;
+
+    &:hover{
+        transition: 0.5s;
+        background-color: transparent;
+        border: 3px solid var(--clr-font);
+    }
+}
+
+@mixin button_bis{
+    background-color: var(--clr-card-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 3px solid transparent;
+    color: var(--clr-font);
+    font-weight: 700;
+    width: fit-content;
+    text-decoration: none;
+
+    &:hover{
+        transition: 0.5s;
+        background-color: transparent;
+        border: 3px solid var(--clr-font);
+    }
+}
