@@ -58,7 +58,7 @@ body {
 
 @media only screen and (max-width: 850px) {
   body {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
   }
 }
 .header {
@@ -79,7 +79,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-right: 2rem;
   cursor: pointer;
 }
 .header__burger__icon__bar {
@@ -138,7 +137,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--mrg-gap-4);
-  margin-top: 4rem;
 }
 .main__presentation__titre {
   font-size: var(--fs-800);
@@ -228,6 +226,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: var(--mrg-gap-1);
   cursor: pointer;
@@ -368,8 +367,11 @@ body {
     width: 15rem;
   }
   .main__presentation__content__texte {
-    max-width: 90%;
+    max-width: 100%;
     align-items: center;
+  }
+  .main__competences__details__logos__svg {
+    width: 4rem;
   }
   .main__projets__cards {
     justify-content: center;
