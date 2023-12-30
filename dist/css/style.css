@@ -378,7 +378,7 @@ body {
     align-items: center;
   }
 }
-#ancre:before {
+.ancre:before {
   display: block;
   content: " ";
   margin-top: -3rem;

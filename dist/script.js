@@ -10,8 +10,8 @@ let Description = [
 ];
 
 let Card = [
-    { titre: "Site de Streaming", description: "Conception d'un site de streaming simple.", source: "../assets/Site_de_streaming.webp", page : "streaming"},
-    { titre: "Cartes de Tarot", description: "De très jolies cartes de tarot marseillais.", source: "../assets/carte_tarot.webp", page : "tarot"}
+    { titre: "Site de Streaming", description: "Conception d'un site de streaming simple.", source: "assets/Site_de_streaming.webp", page : "streaming"},
+    { titre: "Cartes de Tarot", description: "De très jolies cartes de tarot marseillais.", source: "assets/carte_tarot.webp", page : "tarot"}
 ]
 
 // Description Compétences
