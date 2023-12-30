@@ -36,7 +36,6 @@ function showDescription(ev) {
 }
 
 // Affichage Cartes
-
 Card.forEach(item => {
     let template = document.querySelector(".main__projets__template").innerHTML;
     let html = template;
@@ -55,7 +54,7 @@ cards.addEventListener("click", showPage);
 
 function showPage(ev){
     if (ev.target.className === "main__projets__cards__card"){
-      document.location.href="pages/"+ev.target.dataset.page+".html";  
+      document.location.href="dist/pages/"+ev.target.dataset.page+".html";  
     }
 }
 
