@@ -10,8 +10,8 @@ let Description = [
 ];
 
 let Card = [
-    { titre: "Site de Streaming", description: "Conception d'un site de streaming simple.", source: "assets/Site_de_streaming.webp", page : "streaming"},
-    { titre: "Cartes de Tarot", description: "De très jolies cartes de tarot marseillais.", source: "assets/carte_tarot.webp", page : "tarot"}
+    { titre: "Site de Streaming", description: "Conception d'un site de streaming simple.", source: "assets/Site_de_streaming.webp", page : "en-cours"},
+    { titre: "Cartes de Tarot", description: "De très jolies cartes de tarot marseillais.", source: "assets/carte_tarot.webp", page : "en-cours"}
 ]
 
 // Description Compétences
@@ -59,6 +59,16 @@ function showPage(ev){
 }
 
 // menu burger
+
 document.querySelector(".header__burger").addEventListener("click", function() {
     document.querySelector("#header__nav").classList.toggle("show");
+});
+document.querySelector("body").addEventListener("click", function(ev){
+    let classe = ev.target.classList;
+    for (let i=0; i>classe.length-1; i++){
+        if (document.querySelector("#header__nav").classList.contains("show") && classe[i].includes("header__burger")){
+            document.querySelector("#header__nav").classList.remove("show");
+        }
+    }
+    
 });
